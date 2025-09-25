@@ -1,0 +1,17 @@
+{
+  "id": "diggy",
+  "key": "refinement.digger.diggy",
+  "type": ["digger"],
+  "proficiency_cost": 30,
+  "material": "#forge:ingots/gold",
+  "material_count": 3,
+  "bonuses": [
+    {
+      "property": "gearupgrades:dig_speed",
+      "amount": 0.1,
+      "operation": "multiply_base"
+    }
+  ],
+  "allowed_steps": [1, 2, 3],
+  "color": "yellow"
+}

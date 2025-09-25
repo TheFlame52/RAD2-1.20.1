@@ -1,0 +1,37 @@
+{
+  "id": "storming",
+  "key": "refinement.misc.storming",
+  "type": ["minecraft:nether_star"],
+  "proficiency_cost": 100,
+  "material": "minecraft:nether_star",
+  "material_count": 8,
+  "anvil_levels": 30,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.attack_damage",
+      "amount": 5,
+      "operation": "addition",
+      "slots": ["minecraft:mainhand"]
+    },
+    {
+      "property": "minecraft:generic.movement_speed",
+      "amount": 0.1,
+      "operation": "multiply_base",
+      "slots": ["minecraft:mainhand", "minecraft:offhand"]
+    },
+    {
+      "property": "minecraft:generic.armor",
+      "amount": 0.1,
+      "operation": "multiply_base",
+      "slots": ["minecraft:offhand"]
+    },
+    {
+      "property": "minecraft:generic.armor_toughness",
+      "amount": 0.1,
+      "operation": "multiply_base",
+      "slots": ["minecraft:offhand"]
+    }
+  ],
+  "allowed_steps": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "color": "light_purple"
+}

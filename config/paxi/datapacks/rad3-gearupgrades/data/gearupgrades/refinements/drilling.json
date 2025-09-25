@@ -1,0 +1,18 @@
+{
+  "id": "drilling",
+  "key": "refinement.curio.drilling",
+  "type": ["curios"],
+  "proficiency_cost": 5,
+  "material": "#forge:ingots/gold",
+  "material_count": 2,
+  "bonuses": [
+    {
+      "property": "gearupgrades:dig_speed",
+      "amount": 0.10,
+      "operation": "multiply_base",
+	  "slots": ["curios:hands"]
+    }
+  ],
+  "allowed_steps": [1, 2, 3],
+  "color": "aqua"
+}

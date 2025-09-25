@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Monster Spawner",
+    "blockName": "minecraft:spawner",
+    "order": 1,
+    "color": 16711935,
+    "drawing": true
+  }
+]

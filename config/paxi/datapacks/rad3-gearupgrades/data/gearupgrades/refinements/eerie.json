@@ -1,0 +1,24 @@
+{
+  "id": "eerie",
+  "key": "refinement.pumpkin.eerie",
+  "type": ["minecraft:carved_pumpkin", "minecraft:jack_o_lantern"],
+  "proficiency_cost": 25,
+  "material": "minecraft:glowstone_dust",
+  "material_count": 2,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.movement_speed",
+      "amount": 0.25,
+      "operation": "multiply_base",
+	  "slots": ["minecraft:head"]
+    },
+    {
+      "property": "minecraft:generic.luck",
+      "amount": -1.0,
+      "operation": "addition",
+	  "slots": ["minecraft:head"]
+    }
+  ],
+  "allowed_steps": [1],
+  "color": "yellow"
+}

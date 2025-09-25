@@ -1,0 +1,18 @@
+{
+  "id": "warding",
+  "key": "refinement.curio.warding",
+  "type": ["curios"],
+  "proficiency_cost": 5,
+  "material": "#forge:ingots/gold",
+  "material_count": 2,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.armor",
+      "amount": 0.5,
+      "operation": "addition",
+	  "slots": ["curios:ring"]
+    }
+  ],
+  "allowed_steps": [1, 2, 3],
+  "color": "aqua"
+}

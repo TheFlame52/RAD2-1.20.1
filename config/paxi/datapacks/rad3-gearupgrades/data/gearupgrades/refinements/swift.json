@@ -1,0 +1,17 @@
+{
+  "id": "swift",
+  "key": "refinement.melee.swift",
+  "type": ["melee_weapon"],
+  "proficiency_cost": 25,
+  "material": "#forge:ingots/gold",
+  "material_count": 4,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.attack_speed",
+      "amount": 0.1,
+      "operation": "multiply_base"
+    }
+  ],
+  "allowed_steps": [1, 2, 3, 4, 5],
+  "color": "gold"
+}

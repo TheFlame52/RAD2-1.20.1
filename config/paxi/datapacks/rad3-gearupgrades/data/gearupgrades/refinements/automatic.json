@@ -1,0 +1,27 @@
+{
+  "id": "automatic",
+  "key": "refinement.xbow.automatic",
+  "type": ["xbow"],
+  "proficiency_cost": 30,
+  "material": "#forge:ingots/iron",
+  "material_count": 4,
+  "bonuses": [
+    {
+      "property": "attributeslib:draw_speed",
+      "amount": 0.15,
+      "operation": "multiply_base"
+    },
+    {
+      "property": "attributeslib:arrow_velocity",
+      "amount": 0.1,
+      "operation": "multiply_base"
+    },
+    {
+      "property": "attributeslib:arrow_damage",
+      "amount": -0.02,
+      "operation": "multiply_base"
+    }
+  ],
+  "allowed_steps": [1, 2, 3, 4, 5],
+  "color": "dark_red"
+}

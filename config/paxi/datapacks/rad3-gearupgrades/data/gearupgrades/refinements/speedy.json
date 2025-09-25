@@ -1,0 +1,18 @@
+{
+  "id": "speedy",
+  "key": "refinement.curio.speedy",
+  "type": ["curios"],
+  "proficiency_cost": 5,
+  "material": "#forge:ingots/gold",
+  "material_count": 2,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.movement_speed",
+      "amount": 0.02,
+      "operation": "multiply_base",
+	  "slots": ["curios:ring"]
+    }
+  ],
+  "allowed_steps": [1, 2],
+  "color": "aqua"
+}

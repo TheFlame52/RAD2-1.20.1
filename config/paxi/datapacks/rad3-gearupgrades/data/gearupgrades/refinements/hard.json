@@ -1,0 +1,16 @@
+{
+  "id": "hard",
+  "key": "refinement.armor.hard",
+  "type": ["armor"],
+  "proficiency_cost": 20,
+  "material": "#forge:ingots/iron",
+  "material_count": 8,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.armor",
+      "amount": 1,
+      "operation": "addition"
+    }
+  ],
+  "allowed_steps": [1, 2, 3, 4, 5]
+}

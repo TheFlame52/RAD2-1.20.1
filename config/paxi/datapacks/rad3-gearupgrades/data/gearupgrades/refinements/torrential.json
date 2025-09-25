@@ -1,0 +1,26 @@
+{
+  "id": "torrential",
+  "key": "refinement.trident.torrential",
+  "type": ["trident"],
+  "proficiency_cost": 50,
+  "material": "minecraft:heart_of_the_sea",
+  "bonuses": [
+    {
+      "property": "minecraft:generic.attack_speed",
+      "amount": 0.2,
+      "operation": "multiply_base"
+    },
+    {
+      "property": "minecraft:generic.attack_damage",
+      "amount": -0.1,
+      "operation": "multiply_base"
+    },
+    {
+      "property": "forge:swim_speed",
+      "amount": 0.20,
+      "operation": "multiply_base"
+    }
+  ],
+  "allowed_steps": [1, 2, 3, 4, 5],
+  "color": "blue"
+}

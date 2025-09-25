@@ -1,0 +1,16 @@
+{
+  "id": "polished",
+  "key": "refinement.melee.polished",
+  "type": ["melee_weapon"],
+  "proficiency_cost": 50,
+  "material": "#forge:gems/diamond",
+  "material_count": 2,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.attack_damage",
+      "amount": 0.1,
+      "operation": "multiply_base"
+    }
+  ],
+  "allowed_steps": [1, 2, 3, 4, 5, 6]
+}

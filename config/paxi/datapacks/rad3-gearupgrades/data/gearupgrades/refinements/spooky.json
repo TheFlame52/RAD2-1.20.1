@@ -1,0 +1,24 @@
+{
+  "id": "spooky",
+  "key": "refinement.pumpkin.spooky",
+  "type": ["minecraft:carved_pumpkin", "minecraft:jack_o_lantern"],
+  "proficiency_cost": 50,
+  "material": "minecraft:ghast_tear",
+  "material_count": 4,
+  "bonuses": [
+    {
+      "property": "forge:entity_gravity",
+      "amount": -0.25,
+      "operation": "multiply_base",
+	  "slots": ["minecraft:head"]
+    },
+    {
+      "property": "forge:nametag_distance",
+      "amount": -1.0,
+      "operation": "multiply_total",
+	  "slots": ["minecraft:head"]
+    }
+  ],
+  "allowed_steps": [2],
+  "color": "gold"
+}

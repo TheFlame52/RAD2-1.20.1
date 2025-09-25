@@ -1,0 +1,23 @@
+{
+  "refinement.digger.diggy": "Diggy",
+  "refinement.digger.excavator": "Excavator",
+
+  "refinement.melee.swift": "Swift",
+  "refinement.melee.polished": "Polished",
+
+  "refinement.trident.torrential": "Torrential",
+
+  "refinement.shield.reinforced": "Reinforced",
+
+  "refinement.armor.hard": "Hard",
+  "refinement.armor.tough": "Tough",
+
+  "refinement.xbow.automatic": "Automatic",
+  "refinement.bow.sniper": "Sniper",
+
+  "refinement.misc.storming": "Storming",
+
+  "refinement.curio.speedy": "Speedy",
+  "refinement.curio.warding": "Warding",
+  "refinement.curio.drilling": "Drilling"
+}

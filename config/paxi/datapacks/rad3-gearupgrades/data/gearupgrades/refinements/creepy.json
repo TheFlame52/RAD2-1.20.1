@@ -1,0 +1,24 @@
+{
+  "id": "creepy",
+  "key": "refinement.pumpkin.creepy",
+  "type": ["minecraft:carved_pumpkin", "minecraft:jack_o_lantern"],
+  "proficiency_cost": 75,
+  "material": "minecraft:wither_skeleton_skull",
+  "material_count": 3,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.max_health",
+      "amount": 0.25,
+      "operation": "multiply_base",
+	  "slots": ["minecraft:head"]
+    },
+    {
+      "property": "minecraft:generic.luck",
+      "amount": -1.0,
+      "operation": "addition",
+	  "slots": ["minecraft:head"]
+    }
+  ],
+  "allowed_steps": [3],
+  "color": "red"
+}

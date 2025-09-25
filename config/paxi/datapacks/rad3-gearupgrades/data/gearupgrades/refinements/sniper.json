@@ -1,0 +1,27 @@
+{
+  "id": "sniper",
+  "key": "refinement.bow.sniper",
+  "type": ["bow"],
+  "proficiency_cost": 50,
+  "material": "#forge:gems/diamond",
+  "material_count": 2,
+  "bonuses": [
+    {
+      "property": "attributeslib:draw_speed",
+      "amount": -0.15,
+      "operation": "multiply_base"
+    },
+    {
+      "property": "attributeslib:arrow_velocity",
+      "amount": 0.2,
+      "operation": "multiply_base"
+    },
+    {
+      "property": "attributeslib:arrow_damage",
+      "amount": 0.1,
+      "operation": "multiply_base"
+    }
+  ],
+  "allowed_steps": [1, 2, 3, 4, 5],
+  "color": "red"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "phantasmal",
+  "key": "refinement.pumpkin.phantasmal",
+  "type": ["minecraft:carved_pumpkin", "minecraft:jack_o_lantern"],
+  "proficiency_cost": 100,
+  "material": "minecraft:dragon_breath",
+  "material_count": 8,
+  "bonuses": [
+    {
+      "property": "minecraft:generic.armor",
+      "amount": 1,
+      "operation": "addition",
+	  "slots": ["minecraft:head"]
+    },
+    {
+      "property": "minecraft:generic.armor_toughness",
+      "amount": 1,
+      "operation": "addition",
+	  "slots": ["minecraft:head"]
+    },
+    {
+      "property": "minecraft:generic.knockback_resistance",
+      "amount": 1,
+      "operation": "addition",
+	  "slots": ["minecraft:head"]
+    },
+    {
+      "property": "forge:entity_gravity",
+      "amount": -0.25,
+      "operation": "multiply_base",
+	  "slots": ["minecraft:head"]
+    },
+    {
+      "property": "forge:block_reach",
+      "amount": 1,
+      "operation": "addition",
+	  "slots": ["minecraft:head"]
+    }
+  ],
+  "allowed_steps": [5],
+  "color": "dark_purple"
+}

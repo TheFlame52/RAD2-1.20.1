@@ -189,6 +189,8 @@ const removals = [
   "celestial_artifacts:holy_talisman",
   "celestial_artifacts:holy_sword",
   "celestial_artifacts:bearing_stamen",
+  "celestial_artifacts:greedy_heart",
+  "celestial_artifacts:deers_mercy_amulet",
   "mining_dimension:teleporter",
   "apotheotic_additions:sacrificial_shelf",
   "apotheotic_additions:wavebinders_shelf",
@@ -544,7 +546,7 @@ ServerEvents.recipes((event) => {
   event.replaceInput(
     { output: "celestial_artifacts:life_bracelet" },
     "minecraft:ghast_tear",
-    "l2hostility:regenerate"
+    "celestial_core:heart_fragment"
   );
   event.replaceInput(
     { output: "celestial_artifacts:freeze_ring" },
@@ -562,6 +564,16 @@ ServerEvents.recipes((event) => {
     "l2complements:life_essence"
   );
   event.replaceInput(
+    { output: "celestial_artifacts:deer_inscribed_amulet" },
+    "celestial_core:light_fragment",
+    "celestial_core:midnight_fragment"
+  );
+  event.replaceInput(
+    { output: "celestial_artifacts:deer_inscribed_amulet" },
+    "minecraft:diamond",
+    "l2complements:totemic_gold_ingot"
+  );
+  event.replaceInput(
     { output: "l2complements:diffusion_wand" },
     "l2complements:storm_core",
     "hmag:fortune_crystal_plus"
@@ -577,6 +589,16 @@ ServerEvents.recipes((event) => {
     "spelunkery:raw_magnetite"
   );
   event.replaceInput(
+    { output: "bloodmagic:experiencebook" },
+    "minecraft:gold_ingot",
+    "spelunkery:carved_nephrite"
+  );
+  event.replaceInput(
+    { output: "bonfires:estus_shard" },
+    "minecraft:diamond",
+    "minecraft:emerald"
+  );
+  event.replaceInput(
     { output: "regions_unexplored:ash" },
     "minecraft:gunpowder",
     "#forge:ash"
@@ -587,10 +609,87 @@ ServerEvents.recipes((event) => {
     "minecraft:honey_bottle"
   );
   event.replaceInput(
-    { output: "bosses_of_mass_destruction:brimstone_nectar" },
+    { output: "minecraft:crying_obsidian" },
     "minecraft:ghast_tear",
-    "l2complements:cursed_droplet"
+    "hmag:ender_plasm"
   );
+  event.replaceInput(
+    { output: "l2hostility:charm_of_looting_2" },
+    "minecraft:dragon_breath",
+    "hmag:lightning_particle"
+  );
+  event.replaceInput(
+    { output: "minecraft:ancient_debris" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "ars_artillery:tier_3_upgrade" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "ars_additions:stabilized_warp_index" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "apotheosis:augmenting_table" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "l2complements:piglin_rune"},
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "l2hostility:hostility_spawner" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "l2hostility:book_of_omniscience" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "l2hostility:curse_of_pride" },
+    "l2hostility:protection",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "l2hostility:curse_of_wrath" },
+    "l2hostility:reprint",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "l2hostility:curse_of_wrath" },
+	"l2hostility:reflect",
+    "l2hostility:reprint"
+  );
+  event.replaceInput(
+    { output: "celestial_artifacts:greedy_heart"},
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "ars_nouveau:archmage_spell_book" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+//this one doesn't work for some reason ^^^
+  event.replaceInput(
+    { output: "hmag:greedy_crystal_plus" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+  event.replaceInput(
+    { output: "hmag:fortune_crystal_plus" },
+    "minecraft:nether_star",
+    "kubejs:great_soul"
+  );
+
  
   event.shaped('celestial_artifacts:bearing_stamen', [
     'EBE',
@@ -680,9 +779,30 @@ ServerEvents.recipes((event) => {
     B: 'l2complements:captured_wind',
 	A: 'the_bumblezone:windy_air',
 	M: 'l2complements:sun_membrane',
-	T: 'bosses_of_mass_destruction:levitation_block',
+	T: 'quark:dragon_scale',
 	R: 'ars_nouveau:ritual_flight',
 	G: 'deep_aether:gravitite_ring'
+  });
+  event.shaped('celestial_artifacts:greedy_heart', [
+    'LCL',
+    'SHS',
+    'BTB'
+	], {
+	H: 'celestial_core:heart_fragment',
+	C: 'celestial_artifacts:nebula_cube',
+	T: 'celestial_core:treasure_fragment',
+	L: 'l2complements:life_essence',
+	S: 'kubejs:great_soul',
+	B: 'minecraft:bell'
+  });
+  event.shaped('celestial_artifacts:deers_mercy_amulet', [
+    'H H',
+    'HTH',
+    ' A '
+	], {
+	H: 'ars_nouveau:wilden_horn',
+	T: 'celestial_core:treasure_fragment',
+	A: 'minecraft:enchanted_golden_apple'
   });
   event.shaped('nameless_trinkets:gods_crown', [
     'EHE',
@@ -812,6 +932,13 @@ ServerEvents.recipes((event) => {
   [
     '2x #forge:ash',
     'celestial_core:death_essence',
+    'minecraft:glass_bottle'
+  ]);
+  event.shapeless(
+  Item.of('tombstone:essence_of_undeath', 1),
+  [
+    '2x #forge:ash',
+    'endrem:undead_soul',
     'minecraft:glass_bottle'
   ]);
   event.shapeless(
@@ -1066,6 +1193,8 @@ ServerEvents.recipes((event) => {
 	L: 'minecraft:lapis_lazuli'
 	})
 
+
+//class stuff
 	event.shapeless('2x kubejs:dust_experience', [
     'kubejs:portable_dissolver',
     'kubejs:scroll_exp'
@@ -1091,10 +1220,6 @@ ServerEvents.recipes((event) => {
     'kubejs:spawnercore'
 	]).damageIngredient(Item.of('kubejs:portable_dissolver'))
 
-	event.shapeless('5x kubejs:dust_experience', [
-    'kubejs:portable_dissolver',
-    'shieldinghealth:power_token'
-	]).damageIngredient(Item.of('kubejs:portable_dissolver'))
 
 	event.shaped('kubejs:portable_transmutator', [
     'EGE',
@@ -1127,11 +1252,7 @@ ServerEvents.recipes((event) => {
     'kubejs:portable_transmutator',
     'kubejs:spawnercore'
 	]).damageIngredient(Item.of('kubejs:portable_transmutator'))
-
-	event.shapeless('5x kubejs:dust_alchemical', [
-    'kubejs:portable_transmutator',
-    'shieldinghealth:power_token'
-	]).damageIngredient(Item.of('kubejs:portable_transmutator'))  
+  
   
   	event.shaped('kubejs:portable_salvager', [
     'EGE',
@@ -1188,11 +1309,5 @@ ServerEvents.recipes((event) => {
     'kubejs:portable_salvager',
     'kubejs:spawnercore'
 	]).damageIngredient(Item.of('kubejs:portable_salvager'))
-	
-	event.shapeless('5x kubejs:scraps', [
-    'kubejs:portable_salvager',
-    'shieldinghealth:power_token'
-	]).damageIngredient(Item.of('kubejs:portable_salvager'))
 ////////////////	END
 });
-    
